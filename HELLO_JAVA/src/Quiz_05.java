@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Quiz_05 {
 
     public static void main(String[] args) {
@@ -26,33 +28,42 @@ public class Quiz_05 {
         int dice = (int)(Math.random()*6) +1 ;
         String menu;
 
-        switch (dice) {
-            case 1:
-                menu = "국밥";
-                break;
-            case 2:
-                menu = "제육볶음";
-                break;
-            case 3:
-                menu = "돈까스";
-                break;
-            case 4:
-                menu = "햄버거";
-                break;
-            case 5:
-                menu = "분식";
-                break;
-            case 6:
-                menu = "수덕전 정식";
-                break;
+        // switch (dice) {
+        //     case 1:
+        //         menu = "국밥";
+        //         break;
+        //     case 2:
+        //         menu = "제육볶음";
+        //         break;
+        //     case 3:
+        //         menu = "돈까스";
+        //         break;
+        //     case 4:
+        //         menu = "햄버거";
+        //         break;
+        //     case 5:
+        //         menu = "분식";
+        //         break;
+        //     case 6:
+        //         menu = "수덕전 정식";
+        //         break;
             
-            default:
-                menu = "수덕전 정식";
-                break;
-        }
+        //     default:
+        //         menu = "수덕전 정식";
+        //         break;
+        // }
 
-        System.out.println(String.format("주사위의 수가 %d입니다.\n점심메뉴는 %s입니다.", dice,menu));
-    
+        // System.out.println(String.format("주사위의 수가 %d입니다.\n점심메뉴는 %s입니다.", dice,menu));
+        
+
+        ArrayList<String> menuList = new ArrayList<>();
+        menuList.add("국밥");
+        menuList.add("제육볶음");
+        menuList.add("돈까스");
+        menuList.add("햄버거");
+        menuList.add("분식");
+        menuList.add("수덕전 정식");
+        System.out.println(String.format("주사위의 수가 %d입니다.\n점심메뉴는 %s입니다.", dice,menuList.get(dice-1)));
 
     }
 }
