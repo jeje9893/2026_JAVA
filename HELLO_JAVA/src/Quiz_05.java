@@ -1,0 +1,58 @@
+public class Quiz_05 {
+
+    public static void main(String[] args) {
+        /*
+        주사위를 던져 점심메뉴 결정
+
+        조건
+
+        1)정육면체 주사위로 1에서 6까지 결과값 발생
+        2)주사위 1 : 국밥
+                2: 제육볶음
+                3: 돈까스
+                4: 햄버거
+                5: 분식
+                6: 수덕전 정식
+        3) 주사위가 정해진 범위에서 벗어나 값을 알 수 없는 경우 기본값은 6
+
+        출력
+
+        주사위의 수가 {0}입니다.
+        점심메뉴는 {0}입니다.
+        */
+
+
+        //1부터 6까지의 결과값이 임의로 정해짐
+        int dice = (int)(Math.random()*6) +1 ;
+        String menu;
+
+        switch (dice) {
+            case 1:
+                menu = "국밥";
+                break;
+            case 2:
+                menu = "제육볶음";
+                break;
+            case 3:
+                menu = "돈까스";
+                break;
+            case 4:
+                menu = "햄버거";
+                break;
+            case 5:
+                menu = "분식";
+                break;
+            case 6:
+                menu = "수덕전 정식";
+                break;
+            
+            default:
+                menu = "수덕전 정식";
+                break;
+        }
+
+        System.out.println(String.format("주사위의 수가 %d입니다.\n점심메뉴는 %s입니다.", dice,menu));
+    
+
+    }
+}
