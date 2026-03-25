@@ -1,4 +1,4 @@
-public class _09_01_Class {
+public class _09_Class {
     public static void main(String[] args) {
         
         class Person {

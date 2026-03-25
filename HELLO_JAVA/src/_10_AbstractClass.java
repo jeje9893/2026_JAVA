@@ -1,4 +1,4 @@
-public class _09_02_Class {
+public class _10_AbstractClass {
     public static void main(String[] args) {
 
         /* 추상클래스 : 아직 완성되지 않은 클래스 */

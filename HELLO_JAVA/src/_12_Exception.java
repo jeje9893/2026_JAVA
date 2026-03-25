@@ -1,4 +1,4 @@
-public class _10_Exception {
+public class _12_Exception {
     public static void main(String[] args) {
         /*
         예외처리
