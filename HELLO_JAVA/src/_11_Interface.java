@@ -1,4 +1,4 @@
-public class _09_03_Interface {
+public class _11_Interface {
     public static void main(String[] args) {
         
         // 인터페이스 : 클래스의 기본 뼈대

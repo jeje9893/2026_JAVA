@@ -37,28 +37,18 @@ public class _09_Class {
             }
         }
 
-        Person person = new Person("김철수", 20, "축구");
-        person.introduce();
+        /*
+        
+        상속 : 상위단에서 기능을 정의하고 하위 자식클래스에서 활용하고자 할 때 사용
+        클래스 자식클래스 extends 부모클래스 {
+        }
+        
 
-        // 클래스 변수와 메소드는 객체를 생성하지 않고도 사용할 수 있다.
-        Person.gender = "남성";
-        Person.printGender();
-
-        System.out.println("----------------");
-
-        person.setName("홍길동");
-        person.introduce();
-
-        if (person.getName() == "홍길동")
-            System.out.println("이름이 홍길동입니다.");
-
-        System.out.println("----------------");
-
-        // 상속
+        */
         class Student extends Person {
             String university;
 
-            public Student(String name, int age, String hobby, String university) {
+            public Student(String name, int age, String hobby, String university ){
                 super(name, age, hobby);
                 this.university = university;
             }
@@ -70,13 +60,63 @@ public class _09_Class {
             }
 
             public void study(String subject) {
-                System.out.println(String.format("강좌 : %s", subject));
+                System.out.println(String.format("강의 : %s", subject));
             }
+
         }
 
-        Student s1 = new Student("홍길동", 25, "농구", "동의대학교");
-        s1.introduce();
-        s1.study("웹 프로그래밍");
+        Student student = new Student("홍길동", 23, "야구", "동의대학교");
+        student.introduce();
+        student.study("수학");
+
+
+
+
+
+
+
+
+
+        // Person person = new Person("김철수", 20, "축구");
+        // person.introduce();
+
+        // // 클래스 변수와 메소드는 객체를 생성하지 않고도 사용할 수 있다.
+        // Person.gender = "남성";
+        // Person.printGender();
+
+        // System.out.println("----------------");
+
+        // person.setName("홍길동");
+        // person.introduce();
+
+        // if (person.getName() == "홍길동")
+        //     System.out.println("이름이 홍길동입니다.");
+
+        // System.out.println("----------------");
+
+        // // 상속
+        // class Student extends Person {
+        //     String university;
+
+        //     public Student(String name, int age, String hobby, String university) {
+        //         super(name, age, hobby);
+        //         this.university = university;
+        //     }
+
+        //     @Override
+        //     public void introduce() {
+        //         super.introduce();
+        //         System.out.println(String.format("학교 : %s", this.university));
+        //     }
+
+        //     public void study(String subject) {
+        //         System.out.println(String.format("강좌 : %s", subject));
+        //     }
+        // }
+
+        // Student s1 = new Student("홍길동", 25, "농구", "동의대학교");
+        // s1.introduce();
+        // s1.study("웹 프로그래밍");
 
     }
     
