@@ -3,5 +3,10 @@
         "HELLO_JAVA"
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "java.project.sourcePaths": [
+        "Spring/src",
+        "HELLO_JAVA/src",
+        "demo/src/main/java/com/example/demo"
+    ]
 }
